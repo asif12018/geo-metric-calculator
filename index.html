@@ -69,8 +69,16 @@
                     <div class="card-body">
                         <h2 class="card-title mx-auto">Parallelogrem</h2>
                         <p class="mx-auto">Area(A) = b X h</p>
+                        
+                        <div class="flex justify-center items-center">
+                            <input id="parallelogrem-b" class="max-w-[95px] h-[32px] rounded-md" type="text" placeholder="b">
+                            <span class="mx-1">cm</span>
+                            <input id="parallelogrem-h" class="max-w-[95px] h-[32px] rounded-md" type="text" placeholder="h">
+                            <span class="mx-1">cm</span>
+                        </div>
+                        
                         <div class="card-actions ">
-                            <button class="btn btn-primary mx-auto w-full">Calculate</button>
+                            <button onclick="calculateParallelogrem()" class="btn btn-primary mx-auto w-full">Calculate</button>
                         </div>
                     </div>
                 
@@ -83,8 +91,16 @@
                     <div class="card-body">
                         <h2 class="card-title mx-auto">Rhombus</h2>
                         <p class="mx-auto">Area(A) = 0.5 X d1 X d2</p>
+
+                        <div class="flex justify-center items-center">
+                            <input id="rhombus-d1" class="max-w-[95px] h-[32px] rounded-md" type="text" placeholder="d1">
+                            <span class="mx-1">cm</span>
+                            <input id="rhombus-d2" class="max-w-[95px] h-[32px] rounded-md" type="text" placeholder="d2">
+                            <span class="mx-1">cm</span>
+                        </div>
+
                         <div class="card-actions ">
-                            <button class="btn btn-primary mx-auto w-full">Calculate</button>
+                            <button onclick="calculateRhombus()" class="btn btn-primary mx-auto w-full">Calculate</button>
                         </div>
                     </div>
                 
@@ -96,8 +112,16 @@
                     <div class="card-body">
                         <h2 class="card-title mx-auto">Pentagon</h2>
                         <p class="mx-auto">Area(A) = 0.5 x p x b</p>
+                        
+                        <div class="flex justify-center items-center">
+                            <input id="pentagon-p" class="max-w-[95px] h-[32px] rounded-md" type="text" placeholder="p">
+                            <span class="mx-1">cm</span>
+                            <input id="pentagon-b" class="max-w-[95px] h-[32px] rounded-md" type="text" placeholder="b">
+                            <span class="mx-1">cm</span>
+                        </div>
+
                         <div class="card-actions ">
-                            <button class="btn btn-primary mx-auto w-full">Buy Now</button>
+                            <button onclick="calculatePentagon()" class="btn btn-primary mx-auto w-full">Buy Now</button>
                         </div>
                     </div>
                 
@@ -109,8 +133,16 @@
                     <div class="card-body">
                         <h2 class="card-title mx-auto">Ellipse</h2>
                         <p class="mx-auto">Area(A) = pi ab</p>
+
+                        <div class="flex justify-center items-center">
+                            <input id="ellipse-a" class="max-w-[95px] h-[32px] rounded-md" type="text" placeholder="a">
+                            <span class="mx-1">cm</span>
+                            <input id="ellipse-b" class="max-w-[95px] h-[32px] rounded-md" type="text" placeholder="b">
+                            <span class="mx-1">cm</span>
+                        </div>
+
                         <div class="card-actions ">
-                            <button class="btn btn-primary mx-auto w-full">Calculate</button>
+                            <button onclick="calculateEllipse()" class="btn btn-primary mx-auto w-full">Calculate</button>
                         </div>
                     </div>
                 
@@ -118,7 +150,7 @@
             </div>
             
             <!--- area calculation container --->
-            <div class="lg:max-w-96 border-2 border-gray-700 rounded-md">
+            <div class="lg:max-w-96 border-2 border-gray-700 rounded-md px-4">
                 <h3 class="text-3xl text-center p-4 border-b-2">Area calculation</h3>
                 <ul id="result-list" class="list-decimal list-inside text-center md:text-left mt-6">
                     
